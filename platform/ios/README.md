@@ -5,14 +5,11 @@ Ce dossier contient uniquement les instructions pour fuser le jeu LÖVE avec le 
 ## Étapes rapides
 
 > `love.xcodeproj` n'est pas versionné dans ce dépôt : il provient du source iOS de LÖVE.
-> Le script ci-dessous le récupère pour un setup "one click".
+> Pour un flux "one click", il faut que le runner iOS soit déjà présent dans `platform/ios/love/`.
 
-1. Récupère le source iOS de LÖVE et ses dépendances Apple/iOS.
-   ```bash
-   ./scripts/setup_ios.sh
-   ```
+1. Récupère le source iOS de LÖVE et place-le dans `platform/ios/love/`.
 2. Ouvre `platform/ios/love/platform/xcode/ios/love.xcodeproj` et sélectionne la target **love-ios**.
-4. Génére le bundle du jeu :
+3. Génére le bundle du jeu :
 
    ```bash
    ./scripts/build_love.sh
