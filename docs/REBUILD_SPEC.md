@@ -20,8 +20,13 @@ love game
 
 ## iOS (Xcode)
 
+> `love.xcodeproj` n'est pas dans ce dépôt : il est fourni par le source iOS de LÖVE.
+
 1. Récupère le source iOS de LÖVE + les libs Apple/iOS correspondantes.
-2. Ouvre `love.xcodeproj` → target **love-ios**.
+   ```bash
+   ./scripts/setup_ios.sh
+   ```
+2. Ouvre `platform/ios/love/platform/xcode/ios/love.xcodeproj` → target **love-ios**.
 3. Ajoute `build/game.love` dans **Copy Bundle Resources**.
 4. Configure Signing & Capabilities (Team + Bundle ID unique).
 5. Build & Run (iPhone ou Simulator).
